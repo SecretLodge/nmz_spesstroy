@@ -83,4 +83,56 @@
 
 .main {
 	flex: 1 1 auto;
+	font-family: HelveticaNeue;
+}
+
+/* HELLO */
+
+.hello__content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 430px;
+}
+.hello__description {
+	max-width: 700px;
+	align-self: end;
+}
+.hello__description span {
+	font-weight: bold;
+	font-style: italic;
+	font-size: 28px;
+	color: #ffffffcf;
+}
+.hello__description h1 {
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	margin-top: 21px;
+}
+.hello__counselling {
+	width: 430px;
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 20px;
+}
+.hello__counselling > * {
+	margin-bottom: 20px;
+}
+.hello__counselling button {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	background-color: #07B891;
+	align-self: end;
+	margin: 0;
+}
+.hello__counselling h2 {
+	font-size: 32px;
+	font-weight: bold;
+	color: #0E9476;
+}
+.hello__counselling p {
+	color: #272e397f;
 }
