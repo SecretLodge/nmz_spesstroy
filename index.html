@@ -6,7 +6,7 @@
     <title>НМЗ СПЕЦСТРОЙ</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./fonts/HelveticaNeue/font.css">
+    <!-- <link rel="stylesheet" href="./fonts/HelveticaNeue/font.css"> -->
 </head>
 <body class="body">
     <div class="wrapper">
@@ -14,37 +14,51 @@
             <div class="container">
                 <div class="header__content">
                     <div class="header__logo">
-                        <img src="./img/icons/logo.svg" alt="logo">
+                        <img src="./img/icons/logo.svg" alt="logo" class="logo">
                     </div>
-                    <nav class="header__nav">
-                        <ul>
-                            <li><a href="">Оборудование</a></li>
-                            <li><a href="">Услуги</a></li>
-                            <li><a href="">Вакансии</a></li>
-                            <li><a href="">Контент</a></li>
-                        </ul>
-                    </nav>
-                    <button class="header__nav-button">
-                        <img src="./img/icons/menu.svg" alt="menu">
-                    </button>
+                    <div class="header__menu">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Оборудование</a>
+                                    <nav class="sub-menu">
+                                        <ul class="sub-menu__list">
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="#">Конвейеры</a>
+                                                <img src="./img/icons/arrow.svg" alt="double_arrow">
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="#">Эливаторы</a>
+                                                <img src="./img/icons/arrow.svg" alt="arrow">
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="#">Лифтовое оборудование</a>
+                                                <img src="./img/icons/arrow.svg" alt="arrow">
+                                            </li>
+                                            <li class="sub-menu__item">
+                                                <a class="sub-menu__link" href="#">Запорная арматура</a>
+                                                <img src="./img/icons/arrow.svg" alt="double_arrow">
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Услуги</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Вакансии</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">Связаться</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <section class="hello">
-                <div class="container">
-                    <div class="hello__content">
-                        <div class="hello__description">
-                            <span>ООО«НмзСпецстрой»</span>
-                            <h1>Надёжный поставщик оборудования для наземных и подземных условий</h1>
-                        </div>
-                        <div class="hello__counselling">
-                            <h2>Получить<br>консультацию</h2>
-                            <p>Оставьте свою заявку, чтобы мы<br>могли расчитать стоимость<br>оборудования</p>
-                            <button><img src="./img/icons/arrow.svg" alt="arrow"></button>
-                        </div>
-                    </div>
-                </div>
+            <section class="welcome">
             </section>
             <section class="about"></section>
             <section class="equipment"></section>
