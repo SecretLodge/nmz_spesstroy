@@ -97,12 +97,12 @@
 		padding: 20px 0;
 		background-color: #2C2E35;
 		border-radius: 10px;
+		width: 390px;
 	}
 	.sub-menu__item {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		width: 390px;
 		padding: 10px 30px;
 	}
 	.sub-menu__link {
@@ -119,6 +119,7 @@
 @media (max-width: 1149px) {
 	.header__menu-mobile {
 		display: block;
+		position: relative;
 	}
 	.header__menu-button {
 		padding: 20px;
@@ -176,6 +177,7 @@
 	font-size: clamp(16px, 2vw, 28px);
 	padding: 0 clamp(32px, 36vw, 50px) 0 clamp(23px, 4.9vw, 70px);
 	white-space: nowrap;
+	color: #000000;
 }
 .welcome__button-img {
 	background-color: #07B891;
