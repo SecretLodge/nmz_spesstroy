@@ -6,6 +6,7 @@
     <title>НМЗ СПЕЦСТРОЙ</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/hide_menu.js" defer></script>
 </head>
 <body class="body">
     <div class="wrapper">
@@ -54,44 +55,57 @@
                         </nav>
                     </div>
                     <div class="header__menu-mobile">
-                        <button class="header__menu-button">
+                        <button id="open" class="header__menu-button">
                             <img src="./img/icons/menu.svg" alt="menu" class="header__menu-img">
                         </button>
-                        <nav class="menu-mobile">
-                            <ul class="menu-mobile__list">
-                                <li class="menu-moblie__item">
-                                    <a href="" class="menu-mobile__link">Оборудование</a>
-                                    <nav class="sub-menu-mobile">
-                                        <ul class="sub-menu-mobile__list">
-                                            <li class="sub-menu-mobile__item">
-                                                <a href="" class="sub-menu-mobile__link">Конвейры</a>
-                                                <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
-                                            </li>
-                                            <li class="sub-menu-mobile__item">
-                                                <a href="" class="sub-menu-mobile__link">Эливаторы</a>
-                                                <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
-                                            </li>
-                                            <li class="sub-menu-mobile__item">
-                                                <a href="" class="sub-menu-mobile__link">Лифтовое оборудование</a>
-                                                <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
-                                            </li>
-                                            <li class="sub-menu-mobile__item">
-                                                <a href="" class="sub-menu-mobile__link">Запорная арматура</a>
-                                                <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </li>
-                                <li class="menu-moblie__item">
-                                    <a href="" class="menu-mobile__link">Конвейеры</a>
-                                </li>
-                                <li class="menu-moblie__item">
-                                    <a href="" class="menu-mobile__link">Лифтовое оборудование</a>
-                                </li>
-                                <li class="menu-moblie__item">
-                                    <a href="" class="menu-mobile__link">Запорная арматура</a>
-                                </li>
-                            </ul>
+                        <nav class="menu-mobile menu-mobile__hide">
+                            <div class="container">
+                                <div class="menu-mobile__header">
+                                    <div class="header__logo">
+                                        <img src="./img/icons/logo.svg" alt="logo" class="logo">
+                                    </div>
+                                    <button id="hide" class="header__menu-button">
+                                        <img src="./img/icons/close.svg" alt="menu" class="header__menu-img">
+                                    </button>
+                                </div>
+                                <div class="menu-mobile__content">
+                                    <ul class="menu-mobile__list">
+                                        <li class="menu-moblie__item menu__item">
+                                            <a href="" class="menu-mobile__link menu__link">Оборудование</a>
+                                            <div class="menu-mobile__line"></div>
+                                            <nav class="sub-menu-mobile">
+                                                <ul class="sub-menu-mobile__list">
+                                                    <li class="sub-menu-mobile__item sub-menu__item">
+                                                        <a href="" class="sub-menu-mobile__link sub-menu__link">Конвейры</a>
+                                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
+                                                    </li>
+                                                    <li class="sub-menu-mobile__item sub-menu__item">
+                                                        <a href="" class="sub-menu-mobile__link sub-menu__link">Эливаторы</a>
+                                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
+                                                    </li>
+                                                    <li class="sub-menu-mobile__item sub-menu__item">
+                                                        <a href="" class="sub-menu-mobile__link sub-menu__link">Лифтовое оборудование</a>
+                                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
+                                                    </li>
+                                                    <li class="sub-menu-mobile__item sub-menu__item">
+                                                        <a href="" class="sub-menu-mobile__link sub-menu__link">Запорная арматура</a>
+                                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </li>
+                                        <li class="menu-moblie__item menu__item">
+                                            <a href="" class="menu-mobile__link menu__link">Услуги</a>
+                                        </li>
+                                        <li class="menu-moblie__item menu__item">
+                                            <a href="" class="menu-mobile__link menu__link">Вакансии</a>
+                                        </li>
+                                        <li class="menu-moblie__item menu__item menu__item-active">
+                                            <a href="" class="menu-mobile__link menu__link menu__link-active">Связаться</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </nav>
                     </div>
                 </div>
