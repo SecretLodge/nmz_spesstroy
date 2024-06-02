@@ -3,6 +3,12 @@
 	background-size: cover;
 	font-family: 'Helvetica Neue';
 }
+.body__mobile-open {
+	height: 100vh;
+	overflow-y: hidden;
+	padding-right: 15px;
+	position: fixed;
+}
 .wrapper {
 	overflow: hidden;
 	min-height: 100%;
