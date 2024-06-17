@@ -407,7 +407,7 @@
 }
 @media(max-width: 444px) {
 	.card__content {
-		top: -40px;
+		top: -25px;
 		left: 0;
 	}
 }
