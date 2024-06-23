@@ -205,7 +205,7 @@
 }
 .welcome__cta {
 	max-width: clamp(300px, 48.6vw, 700px);
-	margin: 0 0 60px 0;
+	margin: 0 0 150px 0;
 }
 .welcome__company-name {
 	font-size: clamp(18px, 2vw, 28px);
@@ -677,7 +677,8 @@
 	padding: 110px 0;
 }
 @media (max-width: 640px) {
-	.services__content {
+	.services__content,
+	.collaborations__content {
 		padding: 55px 0;
 	}
 }
@@ -740,10 +741,94 @@
     bottom: -18px;
 	align-self: end;
 }
-.card-btn__link {
+
+/* COLLABORATIONS */
+
+.collaborations {
+	background: #24262C;
+	border-radius: clamp(15px, 2vw, 30px);
+	margin: -50px 0 0 0;
+	z-index: 200;
+	position: relative;
 }
-.card-btn__img {
-	
+@media (max-width: 640px) {
+	.collaborations {
+		margin: -25px 0 0 0;
+	}
 }
-.welcome__button-img {
+.collaborations__content {
+	padding: 110px 0;
+	display: flex;
+	justify-content: space-between;
+}
+@media(max-width: 700px) {
+	.collaborations__content {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media (max-width: 640px) {
+	.collaborations__content {
+		padding: 55px 0;
+	}
+}
+.collaborations__header {
+	flex: 0 1 32%;
+	display: inline-block;
+}
+.collaborations__title {
+	margin: 0;
+}
+.collaborations__body {
+	flex: 0 1 67%;
+}
+.collaborations__cards {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(250px, 1fr));
+	grid-template-rows: repeat(4, 400px);
+	gap: 10px;
+}
+@media(max-width: 560px) {
+	.collaborations__cards {
+		display: grid;
+		grid-template-columns: repeat(1, minmax(250px, 1fr));
+		grid-template-rows: repeat(6, 400px);
+		gap: 10px;
+	}
+}
+.collaborations__card-item {
+	background-color: #2C2E35;
+	border-radius: clamp(10px, 1.4vw, 20px);
+}
+.collaborations__card-item:nth-child(4),
+.collaborations__card-item:nth-child(5) {
+	opacity: 0;
+}
+@media(max-width: 560px) {
+	.collaborations__card-item:nth-child(4),
+	.collaborations__card-item:nth-child(5) {
+		display: none;
+	}
+}
+.collaborations__card {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 20px;
+}
+.collaborations__card-header {
+}
+.collaborations__card-number {
+	font-size: 18px;
+	color: #FFFFFF99;
+}
+.collaborations__card-body {
+	margin: auto;
+}
+.collaborations__card-logo {
+	max-width: 350px;
+}
+.collaborations__card-img {
+	width: 100%;
 }
