@@ -924,6 +924,7 @@
 	bottom: 0;
 	height: 12px;
 	width: min-content;
+	font-weight: 500;
 }
 .form__input {
 	width: 100%;
@@ -933,7 +934,6 @@
 	background-color: #ffffff2c;
 }
 .form__input:focus ~ .form__label,
-.form__input:active ~ .form__label,
 .form__input:not(:placeholder-shown) ~ .form__label {
 	position: absolute;
 	transition: all .1s;
@@ -1003,4 +1003,97 @@
 	.form__actions .welcome__button-name {
 		margin: 0 auto;
 	}
+}
+
+/* FOOTER CONTENT */
+
+.footer {
+	background: #0BA785;
+	border-top: 0.5px solid #ffffff7e;
+	padding: 110px 0 40px 0;
+}
+.footer .info__title {
+	margin: 0;
+}
+.footer__content {
+	padding: 0;
+}
+.footer__aside {
+
+}
+.footer__main {
+
+}
+.footer__body {
+
+}
+.footer__pages {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.footer__page {
+	max-width: 250px;
+}
+.page {
+
+}
+.page__header {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 500;
+}
+.page__sections {
+	margin: 16px 0 0 0;
+}
+.page__section {
+	margin: 0 0 16px 0;
+}
+.page__link {
+	font-size: 18px;
+	color: #ffffff80;
+	font-weight: 300;
+}
+.footer__credits {
+	display: flex;
+	flex-direction: column;
+}
+.footer__contacts {
+	display: flex;
+	justify-content: space-between;
+	align-items:end;
+	padding: 80px 0;
+	flex-wrap: wrap;
+}
+.footer__number-phone {
+	margin-bottom: 10px;
+}
+.footer__phone-link {
+	color: #fff;
+	text-decoration: underline #fff;
+}
+.footer__email {
+	margin-bottom: 10px;
+}
+.footer__email-link {
+	color: #fff;
+	text-decoration: underline #fff;
+}
+.footer__developers {
+	margin-bottom: 10px;
+}
+.footer__description {
+	color: #fff;
+	font-size: 13px;
+	margin: 0 0 5px 0;
+}
+.footer__logo {
+}
+.footer__rights {
+	text-align: center;
+}
+.rights {
+	color: #fff;
+}
+.year {
 }
