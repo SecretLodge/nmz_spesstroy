@@ -932,6 +932,7 @@
 	background-color: #ffffff2c;
 }
 .form__input:focus ~ .form__label,
+.form__input:active ~ .form__label,
 .form__input:not(:placeholder-shown) ~ .form__label {
 	position: absolute;
 	transition: all .1s;
@@ -955,7 +956,7 @@
 	transition: all .1s;
 }
 .checkbox__label {
-	font-size: 18px;
+	font-size: clamp(16px, 1.25vw, 18px);
 	color: #fff;
 	display: inline-flex;
 	align-items: center;
