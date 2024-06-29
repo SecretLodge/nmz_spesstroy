@@ -923,6 +923,7 @@
 	right: 0;
 	bottom: 0;
 	height: 12px;
+	width: min-content;
 }
 .form__input {
 	width: 100%;
