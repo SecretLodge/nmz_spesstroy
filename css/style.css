@@ -1,6 +1,4 @@
 .body {
-	background: url(../img/background/first_section.png) center center no-repeat fixed;
-	background-size: cover;
 	font-family: 'Helvetica Neue';
 }
 .wrapper {
@@ -194,6 +192,19 @@
 /* WELCOME */
 
 .welcome {
+}
+.background__container {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.background__img {
+	position: sticky;
+	top: 0;
+	height: 110vh;
 }
 .container {
 }
