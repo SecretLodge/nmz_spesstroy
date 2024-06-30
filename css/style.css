@@ -201,10 +201,22 @@
 	display: flex;
 	justify-content: center;
 }
-.background__img {
+.background__img,
+.background__video {
 	position: sticky;
 	top: 0;
 	height: 110vh;
+}
+.background__img {
+	display: none;
+}
+@media(max-width: 700px) {
+	.background__img {
+		display: initial;
+	}
+	.background__video {
+		display: none;
+	}
 }
 .container {
 }
