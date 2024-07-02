@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 .body {
 	font-family: 'Helvetica Neue';
 }
@@ -281,12 +284,12 @@
 }
 .info__header {
 	display: flex;
-	margin-bottom: clamp(30px, 6.25vw, 90px);
+	margin-bottom: clamp(50px, 6.25vw, 90px);
 }
 @media (max-width: 640px) {
 	.info__header {
 		flex-direction: column;
-		margin-bottom: clamp(30px, 6.25vw, 90px);
+		margin-bottom: clamp(50px, 6.25vw, 90px);
 	}
 }
 .info__title {
@@ -682,8 +685,14 @@
 	overflow: hidden;
 	margin: -50px 0 0 0;
 }
+@media(max-width: 700px) {
+	.about__image-container {
+		display: none;
+	}
+}
 .about__image {
 	object-fit: cover;
+	height: 100vh;
 }
 
 /* SERVICES */
@@ -754,7 +763,7 @@
 	display: flex;
 }
 .services__card-description {
-	font-size: 22px;
+	font-size: clamp(18px, 1.5vw, 22px);
 	font-weight: 400;
 	color: #FFFFFF99;
 }
@@ -955,6 +964,10 @@
 	border-radius: clamp(10px, 1.4vw, 20px);
 	font-size: 18px;
 	background-color: #ffffff2c;
+	color: #fff;
+}
+.form__input::placeholder {
+	color: #fff;
 }
 .form__input:focus ~ .form__label,
 .form__input:not(:placeholder-shown) ~ .form__label {
@@ -1033,7 +1046,7 @@
 .footer {
 	background: #0BA785;
 	border-top: 0.5px solid #ffffff7e;
-	padding: 110px 0 40px 0;
+	padding: 55px 0;
 }
 .footer .info__title {
 	margin: 0;
@@ -1077,33 +1090,57 @@
 	color: #ffffff80;
 	font-weight: 300;
 }
-.footer__credits {
+.rights__aside {
+	margin: 0;
 	display: flex;
-	flex-direction: column;
+	align-items: end;
+}
+.contacts__content {
+	margin: 40px 0 0 0;
+}
+.contacts__body {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+	flex-wrap: wrap;
+}
+@media (max-width: 505px) {
+	.contacts__body {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+	.rights__aside {
+		margin: 0 0 20px 0;
+		display: flex;
+		align-items: end;
+	}
 }
 .footer__contacts {
 	display: flex;
-	justify-content: space-between;
-	align-items:end;
-	padding: 80px 0;
-	flex-wrap: wrap;
+	flex-direction: column;
+}
+@media (max-width: 505px) {
+	.footer__contacts {
+		display: flex;
+		flex-direction: column;
+		margin: 0 0 20px 0;
+	}
 }
 .footer__number-phone {
-	margin-bottom: 10px;
+	font-size: clamp(22px, 3.3vw, 48px);
 }
 .footer__phone-link {
 	color: #fff;
-	text-decoration: underline #fff;
 }
 .footer__email {
-	margin-bottom: 10px;
 }
 .footer__email-link {
 	color: #fff;
-	text-decoration: underline #fff;
+	font-size: clamp(22px, 3.3vw, 48px);
 }
 .footer__developers {
-	margin-bottom: 10px;
+
 }
 .footer__description {
 	color: #fff;
@@ -1111,12 +1148,18 @@
 	margin: 0 0 5px 0;
 }
 .footer__logo {
+
 }
 .footer__rights {
-	text-align: center;
+	
 }
 .rights {
 	color: #fff;
+	font-size: clamp(14px, 1.25vw, 18px);
 }
 .year {
+
+}
+.content {
+	padding: 55px 0 110px 0;
 }

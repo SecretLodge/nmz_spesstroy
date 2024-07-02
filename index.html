@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>НМЗ СПЕЦСТРОЙ</title>
+    <link rel="icon" href="./img/icons/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/hide_menu.js" defer></script>
 </head>
 <body class="body">
     <div class="wrapper">
-        <div class="background__container">
-            <img class="background__img" src="./img/background/first_section.png" alt="Главный экран">
-            <video autoplay loop muted class="background__video" id="background__video">
-                <source src="./video/first_section.webm" type="video/webm"></source>
-            </video>
-        </div>
         <header class="header">
             <div class="container">
                 <div class="header__content">
@@ -26,7 +21,7 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a class="menu__link" href="#">Оборудование</a>
+                                    <a class="menu__link" href="#equipment">Оборудование</a>
                                     <nav class="sub-menu">
                                         <ul class="sub-menu__list">
                                             <li class="sub-menu__item">
@@ -134,7 +129,7 @@
             </section>
             <section class="about">
                 <div class="container">
-                    <div class="about__content info">
+                    <div class="content about__content info">
                         <div class="info__header">
                             <div class="info__title">
                                 <h2 class="info__text">[О Компании]</h2>
@@ -219,9 +214,9 @@
                     </div>
                 </div>
             </section>
-            <section class="equipment">
+            <section id="equipment" class="equipment">
                 <div class="container">
-                    <div class="equipment__container about__content info">
+                    <div class="content equipment__container about__content info">
                         <div class="info__header equipment__header">
                             <div class="info__title equipment__title">
                                 <h2 class="info__text">[Оборудование]</h2>
@@ -302,7 +297,7 @@
             </div>
             <section class="about about__second">
                 <div class="container">
-                    <div class="about__content info">
+                    <div class="about__content info content">
                         <div class="info__header">
                             <div class="info__title">
                                 <h2 class="info__text">[О Компании]</h2>
@@ -325,7 +320,7 @@
             </section>
             <section class="services">
                 <div class="container">
-                    <div class="services__content info">
+                    <div class="services__content info content">
                         <div class="info__header services__header">
                             <div class="info__title">
                                 <h2 class="info__text">[Услуги]</h2>
@@ -344,93 +339,92 @@
                                             <p class="services__card-description">Включает в себя все виды работ по установке, настройке и обслуживанию оборудования на территории горно-обогатительных предприятий.</p>
                                             <div class="services__card-button">
                                                 <a class="card-btn__link" href="">
+                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__card">
+                                    <div class="services__card-content">
+                                        <div class="services__card-header">
+                                            <div class="services__card-date">[ 02/06 ]</div>
+                                            <h4 class="services__card-name">Монтаж инженерных коммуникаций по выработкам</h4>
+                                        </div>
+                                        <div class="services__card-body">
+                                            <p class="services__card-description">Это процесс установки и подключения инженерных систем, таких как вентиляция и электроснабжение, в подземных шахтах, туннелях и других подземных сооружениях.</p>
+                                            <div class="services__card-button">
+                                                <a class="card-btn__link" href="">
+                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__card">
+                                    <div class="services__card-content">
+                                        <div class="services__card-header">
+                                            <div class="services__card-date">[ 03/06 ]</div>
+                                            <h4 class="services__card-name">Монтаж в горно-обогатительных рудниках</h4>
+                                        </div>
+                                        <div class="services__card-body">
+                                            <p class="services__card-description">Вентиляционные ворота обеспечивают приток свежего воздуха в помещение, противопожарные предотвращают распространение огня и дыма в случае возгорания.</p>
+                                            <div class="services__card-button">
+                                                <a class="card-btn__link" href="">
+                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__card">
+                                    <div class="services__card-content">
+                                        <div class="services__card-header">
+                                            <div class="services__card-date">[ 04/06 ]</div>
+                                            <h4 class="services__card-name">Mонтаж лифтового оборудования</h4>
+                                        </div>
+                                        <div class="services__card-body">
+                                            <p class="services__card-description">Услуга включает оценку объекта, проектирование, поставку оборудования, монтаж, подключение и настройку, тестирование и сдачу объекта.</p>
+                                            <div class="services__card-button">
+                                                <a class="card-btn__link" href="">
+                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__card">
+                                    <div class="services__card-content">
+                                        <div class="services__card-header">
+                                            <div class="services__card-date">[ 05/06 ]</div>
+                                            <h4 class="services__card-name">Монтаж горно-шахтного оборудование под ключ</h4>
+                                        </div>
+                                        <div class="services__card-body">
+                                            <p class="services__card-description">Проведение всех необходимых работ по установке, настройке и запуску горно-шахтного оборудования на объекте заказчика.</p>
+                                            <div class="services__card-button">
+                                                <a class="card-btn__link" href="">
+                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="services__card">
+                                    <div class="services__card-content">
+                                        <div class="services__card-header">
+                                            <div class="services__card-date">[ 06/06 ]</div>
+                                            <h4 class="services__card-name">Cтроительство ходовых восстающих в стволе</h4>
+                                        </div>
+                                        <div class="services__card-body">
+                                            <p class="services__card-description">Процесс создания вертикальных туннелей или шахтных стволов для обеспечения доступа к подземным выработкам.</p>
+                                            <div class="services__card-button">
+                                                <a class="card-btn__link" href="">
                                                     <img class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="services__card">
-                                    <div class="services__card-content">
-                                        <div class="services__card-header">
-                                            <div class="services__card-date">[ 01/06 ]</div>
-                                            <h4 class="services__card-name">Монтаж в горно-обогатительных рудниках</h4>
-                                        </div>
-                                        <div class="services__card-body">
-                                            <p class="services__card-description">Включает в себя все виды работ по установке, настройке и обслуживанию оборудования на территории горно-обогатительных предприятий.</p>
-                                            <div class="services__card-button">
-                                                <a class="card-btn__link" href="">
-                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="services__card">
-                                    <div class="services__card-content">
-                                        <div class="services__card-header">
-                                            <div class="services__card-date">[ 01/06 ]</div>
-                                            <h4 class="services__card-name">Монтаж в горно-обогатительных рудниках</h4>
-                                        </div>
-                                        <div class="services__card-body">
-                                            <p class="services__card-description">Включает в себя все виды работ по установке, настройке и обслуживанию оборудования на территории горно-обогатительных предприятий.</p>
-                                            <div class="services__card-button">
-                                                <a class="card-btn__link" href="">
-                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="services__card">
-                                    <div class="services__card-content">
-                                        <div class="services__card-header">
-                                            <div class="services__card-date">[ 01/06 ]</div>
-                                            <h4 class="services__card-name">Монтаж в горно-обогатительных рудниках</h4>
-                                        </div>
-                                        <div class="services__card-body">
-                                            <p class="services__card-description">Включает в себя все виды работ по установке, настройке и обслуживанию оборудования на территории горно-обогатительных предприятий.</p>
-                                            <div class="services__card-button">
-                                                <a class="card-btn__link" href="">
-                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="services__card">
-                                    <div class="services__card-content">
-                                        <div class="services__card-header">
-                                            <div class="services__card-date">[ 01/06 ]</div>
-                                            <h4 class="services__card-name">Монтаж в горно-обогатительных рудниках</h4>
-                                        </div>
-                                        <div class="services__card-body">
-                                            <p class="services__card-description">Включает в себя все виды работ по установке, настройке и обслуживанию оборудования на территории горно-обогатительных предприятий.</p>
-                                            <div class="services__card-button">
-                                                <a class="card-btn__link" href="">
-                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="services__card">
-                                    <div class="services__card-content">
-                                        <div class="services__card-header">
-                                            <div class="services__card-date">[ 01/06 ]</div>
-                                            <h4 class="services__card-name">Монтаж в горно-обогатительных рудниках</h4>
-                                        </div>
-                                        <div class="services__card-body">
-                                            <p class="services__card-description">Включает в себя все виды работ по установке, настройке и обслуживанию оборудования на территории горно-обогатительных предприятий.</p>
-                                            <div class="services__card-button">
-                                                <a class="card-btn__link" href="">
-                                                    <img loading="lazy" class="card-btn__img welcome__button-img" src="./img/icons/double_arrow.svg" alt="double arrow">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -438,9 +432,9 @@
             </section>
             <section class="collaborations">
                 <div class="container">
-                    <div class="collaborations__content">
+                    <div class="collaborations__content content">
                         <div class="info__header collaborations__header">
-                            <div class="info__title collaborations__title">
+                            <div class="info__title collaborations__title equipment__title">
                                 <h2 class="info__text">[Сотрудничества]</h2>
                                 <h3 class="equipment__description">Нас выбирают лидеры на рынке:</h3>
                             </div>
@@ -561,24 +555,19 @@
                                         <div class="form__inputs">
                                             <div class="form__list">
                                                 <div class="form__item">
-                                                    <input type="text" name="name" id="name" class="form__input" placeholder="">
-                                                    <label class="form__label" for="name">Имя</label>
+                                                    <input type="text" name="name" id="name" class="form__input" placeholder="Имя">
                                                 </div>
                                                 <div class="form__item">
-                                                    <input type="email" name="email" id="email" class="form__input" placeholder="">
-                                                    <label class="form__label" for="email">Почта</label>
+                                                    <input type="email" name="email" id="email" class="form__input" placeholder="Почта">
                                                 </div>
                                                 <div class="form__item">
-                                                    <input type="tel" name="number" id="number" class="form__input" placeholder="">
-                                                    <label class="form__label" for="number">Номер</label>
+                                                    <input type="tel" name="number" id="number" class="form__input" placeholder="Номер">
                                                 </div>
                                                 <div class="form__item">
-                                                    <input type="text" name="company" id="company" class="form__input" placeholder="">
-                                                    <label class="form__label" for="company">Компания</label>
+                                                    <input type="text" name="company" id="company" class="form__input" placeholder="Компания">
                                                 </div>
                                                 <div class="form__item">
-                                                    <textarea placeholder="" type="text" name="message" id="message" class="form__input"></textarea>
-                                                    <label class="form__label" for="message">Сообщение</label>
+                                                    <textarea placeholder="Коментарий" type="text" name="message" id="message" class="form__input"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form__checkbox checkbox">
@@ -675,25 +664,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer__credits">
-                    <div class="footer__contacts">
-                        <div class="footer__number-phone">
-                            <a href="tel:+73422480885" class="footer__phone-link">+7(342) 248-08-85</a>
-                        </div>
-                        <div class="footer__email">
-                            <a href="mailto:OOO.TDNMZ@INBOX.RU" class="footer__email-link">OOO.TDNMZ@INBOX.RU</a>
-                        </div>
-                        <div class="footer__developers">
-                            <p class="footer__description">SITE BY: MVP PRODUCTION</p>
-                            <img loading="lazy" src="./img/icons/mvp_logo.svg" alt="" class="footer__logo">
+                <div class="footer__content form__content contacts__content">
+                    <div class="form__aside footer__aside rights__aside">
+                        <div class="footer__rights">
+                            <p class="rights">©️ <span class="year">2024</span> NmzSpecStroy. All Rights Reserved</p>
                         </div>
                     </div>
-                    <div class="footer__rights">
-                        <p class="rights">©️ <span class="year">2024</span> NmzSpecStroy. All Rights Reserved</p>
+                    <div class="form__main footer__main">
+                        <div class="footer__body contacts__body">
+                            <div class="footer__contacts">
+                                <div class="footer__number-phone">
+                                    <a href="tel:+73422480885" class="footer__phone-link">+7(342) 248-08-85</a>
+                                </div>
+                                <div class="footer__email">
+                                    <a href="mailto:OOO.TDNMZ@INBOX.RU" class="footer__email-link">OOO.TDNMZ@INBOX.RU</a>
+                                </div>
+                            </div>
+                            <div class="footer__developers">
+                                <p class="footer__description">SITE BY: MVP PRODUCTION</p>
+                                <img loading="lazy" src="./img/icons/mvp_logo.svg" alt="" class="footer__logo">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>      
+        </footer>
+        <div class="background__container">
+            <img class="background__img" src="./img/background/first_section.png" alt="Главный экран">
+            <video autoplay loop muted class="background__video" id="background__video">
+                <source src="./video/first_section.webm" type="video/webm"></source>
+            </video>
+        </div>      
     </div>
 </body>
 </html>
