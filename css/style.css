@@ -1231,3 +1231,118 @@ html {
 	color: #c3bdbd;
 	text-decoration: underline;
 }
+
+/* vacancies */
+
+.vacancies__body {
+	display: flex;
+	flex-direction: column;
+}
+.vacancies__description:last-child {
+
+}
+.vacancies__header {
+	font-size: clamp(18px, 1.8vw, 26px);
+	font-weight: 550;
+	text-align: left;
+	color: #fff;
+}
+.vacancies__proposlas {
+	margin: 30px 0 0 0;
+}
+.proposlas {
+}
+.proposlas__item {
+	margin: 15px 0 0 15px;
+	list-style: disc;
+	font-size: clamp(14px, 1.25vw, 18px);;
+	font-weight: 400;
+	color: #fff;
+	line-height: 27px;
+}
+.vacancies__row {
+	display: flex;
+	margin: 40px 0 0 0;
+}
+@media (max-width: 847px) {
+	.vacancies__row {
+		display: flex;
+		flex-direction: column;
+	}
+	.vacancies__description:last-child {
+		margin-top: 30px;
+	}
+}
+.vacansies__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+}
+.vacansy {
+	width: 100%;
+}
+.vacancy__item {
+	padding: clamp(20px, 2.8vw, 40px);
+	display: flex;
+	background-color: rgba(44, 46, 53, 1);
+	justify-content: space-between;
+	border-radius: clamp(10px, 1.4vw, 20px);
+}
+@media(max-width: 715px) {
+	.vacancy__item {
+		padding: clamp(20px, 2.8vw, 40px);
+		display: flex;
+		background-color: rgba(44, 46, 53, 1);
+		border-radius: clamp(10px, 1.4vw, 20px);
+		flex-direction: column;
+	}
+}
+.vacansy__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.vacansy__header {
+}
+.vacansy__title {
+	font-size: clamp(22px, 3.3vw, 48px);
+	font-weight: 550;
+	color: #fff;
+}
+.vacansy__description {
+	margin: 30px 0 0 0;
+	font-size: clamp(16px, 1.8vw, 26px);
+	font-weight: 550;
+	color: #FFFFFF99;
+}
+.vacansy__tags {
+	margin-top: 110px;
+	max-width: 467px;
+	flex-wrap: wrap;
+	display: flex;
+	gap: 10px;
+}
+
+.vacansy__tag {
+	padding: 25px 20px;
+	border-radius: 10px;
+	background-color: #343640;
+	font-size: clamp(12px, 1.25vw, 18px);
+	font-weight: 550;
+	color: #fff;
+}
+.vacansy__button {
+	align-self: end;
+}
+@media(max-width: 715px) {
+	.vacansy__button {
+		margin-top: 15px;
+		align-self: start;
+	}
+}
+.vacancy__content {
+	padding: 40px 0 40px 0;
+}
+.vacancy__header {
+	margin: 0;
+}
