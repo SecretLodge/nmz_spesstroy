@@ -631,6 +631,20 @@ html {
 		gap: 10px;
 	}
 }
+.equipment__cards-reset-two {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(250px, 1fr));
+	grid-template-rows: repeat(1, minmax(600px, 700px));
+	gap: 10px;
+}
+@media(max-width: 846px) {
+	.equipment__cards-reset-two {
+		display: grid;
+		grid-template-columns: repeat(1, minmax(250px, 1fr));
+		grid-template-rows: repeat(2, clamp(550px, 48vw, 700px));
+		gap: 10px;
+	}
+}
 .equipment__card {
 	background-color: #24262C;
 	border-radius: clamp(10px, 1.4vw, 20px);
