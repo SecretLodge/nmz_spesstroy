@@ -1168,3 +1168,7 @@ html {
 	position: sticky;
 	top: 100px;
 }
+.polit-privacy {
+	color: #c3bdbd;
+	text-decoration: underline;
+}
