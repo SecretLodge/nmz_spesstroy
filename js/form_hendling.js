@@ -9,7 +9,6 @@
         event.preventDefault();
 
         let error = formValidate(form)
-
         let formData = new FormData(this);
 
         if(error === 0) {

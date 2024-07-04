@@ -224,7 +224,7 @@ html {
 .background__gradient {
 	position: sticky;
 	top: 0;
-	height: 130vh;
+	height: clamp(100vh, 68vw, 130vh);
 }
 .background__gradient {
 	position: absolute;
