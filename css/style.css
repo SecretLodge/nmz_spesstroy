@@ -3,6 +3,7 @@ html {
 }
 .body {
 	font-family: 'Helvetica Neue', sans-serif;
+	background-color: rgba(32, 34, 39, 1);
 }
 .wrapper {
 	min-height: 100%;
