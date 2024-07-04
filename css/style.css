@@ -211,7 +211,7 @@ html {
 
 .welcome {
 	position: sticky;
-	top: 0;
+	top: 100px;
 	z-index: -1;
 }
 .background__container {
