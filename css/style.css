@@ -414,6 +414,26 @@ html {
 	overflow: hidden;
 	width: 100%;
 }
+.card__item::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: linear-gradient(132.64deg, rgba(36, 38, 44, 0) 34.38%, rgba(36, 38, 44, 0.335395) 55.14%, rgba(36, 38, 44, 0.66126) 93.27%, rgba(36, 38, 44, 0.8) 102.05%);
+}
+.card__item::after:first-child {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: linear-gradient(144.67deg, rgba(7, 184, 145, 0) 38.02%, rgba(7, 184, 145, 0.484941) 68.66%, rgba(7, 184, 145, 0.9) 96.04%);
+}
 .info__card:first-child .card__item {
 	color: #2C2E35;
 	background-color: #07B891;
