@@ -1366,3 +1366,13 @@ html {
 .vacancy__header {
 	margin: 0;
 }
+.polit__privacy {
+	color: #fff;
+	line-height: 150%;
+}
+.polit__reset {
+	padding-bottom: 100px;
+}
+.checkbox__label * {
+	display: inline;
+}
