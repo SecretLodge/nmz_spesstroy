@@ -5,17 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>НМЗ СПЕЦСТРОЙ</title>
     <link rel="icon" href="./img/icons/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <script src="./js/hide_menu.js" defer></script>
+    <script src="./js/form_hendling.js" defer></script>
+    <script src="./js/header_scroll.js" defer></script>
 </head>
 <body class="body">
     <div class="wrapper">
+        <nav class="menu-mobile menu-mobile__hide">
+            <div class="container">
+                <div class="menu-mobile__header">
+                    <div class="header__logo">
+                        <img src="./img/icons/logo.svg" alt="logo" class="logo">
+                    </div>
+                    <button id="hide" class="header__menu-button">
+                        <img src="./img/icons/close.svg" alt="menu" class="header__menu-img">
+                    </button>
+                </div>
+                <div class="menu-mobile__content">
+                    <ul class="menu-mobile__list">
+                        <li class="menu-moblie__item menu__item">
+                            <a href="./index.html#equipment" class="menu-mobile__link menu__link">Оборудование</a>
+                            <div class="menu-mobile__line"></div>
+                            <nav class="sub-menu-mobile">
+                                <ul class="sub-menu-mobile__list">
+                                    <li class="sub-menu-mobile__item sub-menu__item">
+                                        <a href="./сonveyors.html" class="sub-menu-mobile__link sub-menu__link">Конвейры</a>
+                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
+                                    </li>
+                                    <li class="sub-menu-mobile__item sub-menu__item">
+                                        <a href="./elevators.html" class="sub-menu-mobile__link sub-menu__link">Эливаторы</a>
+                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
+                                    </li>
+                                    <li class="sub-menu-mobile__item sub-menu__item">
+                                        <a href="./lift_equipment.html" class="sub-menu-mobile__link sub-menu__link">Лифтовое оборудование</a>
+                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
+                                    </li>
+                                    <li class="sub-menu-mobile__item sub-menu__item">
+                                        <a href="./shut-off_valves.html" class="sub-menu-mobile__link sub-menu__link">Запорная арматура</a>
+                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
+                                    </li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li class="menu-moblie__item menu__item">
+                            <a href="./index.html#services" class="menu-mobile__link menu__link">Услуги</a>
+                        </li>
+                        <li class="menu-moblie__item menu__item">
+                            <a href="./vacancies.html" class="menu-mobile__link menu__link">Вакансии</a>
+                        </li>
+                        <li class="menu-moblie__item menu__item menu__item-active">
+                            <a href="#form" class="menu-mobile__link menu__link menu__link-active">Связаться</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <header class="header header__dark">
             <div class="container">
                 <div class="header__content">
                     <div class="header__logo">
-                        <a href="/">
+                        <a href="./index.html">
                             <img src="./img/icons/logo.svg" alt="logo" class="logo">
                         </a>
                     </div>
@@ -23,7 +74,7 @@
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a class="menu__link" href="#equipment">Оборудование</a>
+                                    <a class="menu__link" href="./index.html#equipment">Оборудование</a>
                                     <nav class="sub-menu">
                                         <ul class="sub-menu__list">
                                             <li class="sub-menu__item">
@@ -46,7 +97,7 @@
                                     </nav>
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link" href="#services">Услуги</a>
+                                    <a class="menu__link" href="./index.html#services">Услуги</a>
                                 </li>
                                 <li class="menu__item">
                                     <a class="menu__link" href="./vacancies.html">Вакансии</a>
@@ -61,55 +112,6 @@
                         <button id="open" class="header__menu-button">
                             <img src="./img/icons/menu.svg" alt="menu" class="header__menu-img">
                         </button>
-                        <nav class="menu-mobile menu-mobile__hide">
-                            <div class="container">
-                                <div class="menu-mobile__header">
-                                    <div class="header__logo">
-                                        <img src="./img/icons/logo.svg" alt="logo" class="logo">
-                                    </div>
-                                    <button id="hide" class="header__menu-button">
-                                        <img src="./img/icons/close.svg" alt="menu" class="header__menu-img">
-                                    </button>
-                                </div>
-                                <div class="menu-mobile__content">
-                                    <ul class="menu-mobile__list">
-                                        <li class="menu-moblie__item menu__item">
-                                            <a href="#equipment" class="menu-mobile__link menu__link">Оборудование</a>
-                                            <div class="menu-mobile__line"></div>
-                                            <nav class="sub-menu-mobile">
-                                                <ul class="sub-menu-mobile__list">
-                                                    <li class="sub-menu-mobile__item sub-menu__item">
-                                                        <a href="./сonveyors.html" class="sub-menu-mobile__link sub-menu__link">Конвейры</a>
-                                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
-                                                    </li>
-                                                    <li class="sub-menu-mobile__item sub-menu__item">
-                                                        <a href="./elevators.html" class="sub-menu-mobile__link sub-menu__link">Эливаторы</a>
-                                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
-                                                    </li>
-                                                    <li class="sub-menu-mobile__item sub-menu__item">
-                                                        <a href="./lift_equipment.html" class="sub-menu-mobile__link sub-menu__link">Лифтовое оборудование</a>
-                                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
-                                                    </li>
-                                                    <li class="sub-menu-mobile__item sub-menu__item">
-                                                        <a href="./shut-off_valves.html" class="sub-menu-mobile__link sub-menu__link">Запорная арматура</a>
-                                                        <img src="./img/icons/arrow.svg" alt="arrow" class="sub-menu-mobile__img">
-                                                    </li>
-                                                </ul>
-                                            </nav>
-                                        </li>
-                                        <li class="menu-moblie__item menu__item">
-                                            <a href="#services" class="menu-mobile__link menu__link">Услуги</a>
-                                        </li>
-                                        <li class="menu-moblie__item menu__item">
-                                            <a href="./vacancies.html" class="menu-mobile__link menu__link">Вакансии</a>
-                                        </li>
-                                        <li class="menu-moblie__item menu__item menu__item-active">
-                                            <a href="#form" class="menu-mobile__link menu__link menu__link-active">Связаться</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
                     </div>
                 </div>
             </div>
