@@ -128,6 +128,9 @@ html {
 .header__menu-mobile {
 	display: none;
 }
+.menu-mobile {
+	display: none;
+}
 @media (max-width: 1149px) {
 	.header__menu-mobile {
 		display: block;
@@ -141,7 +144,7 @@ html {
 	.header__menu-img {
 	}
 	.menu-mobile {
-		position: fixed;
+		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100vw;
@@ -150,6 +153,7 @@ html {
 		transition: transform .4s;
 		overflow: auto;
 		z-index: 10000000000;
+		display: block;
 	}
 	.menu-mobile__hide {
 		transform: translate(100%, 0);
