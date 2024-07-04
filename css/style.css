@@ -1357,7 +1357,7 @@ html {
 .vacansy__description {
 	margin: 30px 0 0 0;
 	font-size: clamp(16px, 1.8vw, 26px);
-	font-weight: 550;
+	font-weight: 400;
 	color: #FFFFFF99;
 }
 .vacansy__tags {
@@ -1366,6 +1366,11 @@ html {
 	flex-wrap: wrap;
 	display: flex;
 	gap: 10px;
+}
+@media (max-width: 715px) {
+	.vacansy__tags {
+		margin-top: 15px;
+	}
 }
 
 .vacansy__tag {
@@ -1381,7 +1386,7 @@ html {
 }
 @media(max-width: 715px) {
 	.vacansy__button {
-		margin-top: 15px;
+		margin-top: 110px;
 		align-self: start;
 	}
 }
