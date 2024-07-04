@@ -21,9 +21,15 @@ html {
 
 .header {
 	padding: 16px 0;
+	position: sticky;
+	top: 0;
+	z-index: 100000;
+	background-color: transparent;
+	transition: background-color .3s;
 }
 .header__dark {
 	background-color: rgba(32, 34, 39, 1);
+	transition: background-color .3s;
 }
 .header__content {
 	display: flex;
@@ -97,6 +103,7 @@ html {
 	position: absolute;
 	top: 60px;
 	left: 0px;
+	z-index: 100000000000;
 }
 .sub-menu__list {
 	margin: 13px 0 0 0;
@@ -134,7 +141,7 @@ html {
 	.header__menu-img {
 	}
 	.menu-mobile {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100vw;
@@ -142,6 +149,7 @@ html {
 		background-color: #24262C;
 		transition: transform .4s;
 		overflow: auto;
+		z-index: 10000000000;
 	}
 	.menu-mobile__hide {
 		transform: translate(100%, 0);
@@ -424,7 +432,7 @@ html {
 	z-index: 1;
 	background: linear-gradient(132.64deg, rgba(36, 38, 44, 0) 34.38%, rgba(36, 38, 44, 0.335395) 55.14%, rgba(36, 38, 44, 0.66126) 93.27%, rgba(36, 38, 44, 0.8) 102.05%);
 }
-.card__item::after:first-child {
+.info__card:first-child .card__item::after {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -606,7 +614,7 @@ html {
 }
 .equipment__title {
 	position: sticky;
-	top: 30px;
+	top: 110px;
 	height: min-content;
 }
 @media (max-width: 640px) {
@@ -993,7 +1001,14 @@ html {
 	margin: 20px 0 0 0;
 }
 .form__body {
+	position: relative;
 	margin: clamp(30px, 4.2vw, 60px) 0 0 0;
+}
+.form__body::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .form__data {
 }
@@ -1064,6 +1079,12 @@ html {
 }
 .form__checkbox {
 	margin: 30px 0 0 0;
+}
+.checkbox {
+
+}
+.form__checkbox._error .checkbox__label::before {
+	border: 2px solid #ff0000;
 }
 .checkbox__input {
 	display: none;
@@ -1373,6 +1394,7 @@ html {
 .polit__reset {
 	padding-bottom: 100px;
 }
-.checkbox__label * {
-	display: inline;
+.form__input._error {
+	border: #ff0000 solid 2px;
 }
+
