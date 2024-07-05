@@ -913,14 +913,14 @@ html {
 .collaborations__cards {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(250px, 1fr));
-	grid-template-rows: repeat(4, 400px);
+	grid-auto-rows: 400px;
 	gap: 10px;
 }
 @media(max-width: 560px) {
 	.collaborations__cards {
 		display: grid;
 		grid-template-columns: repeat(1, minmax(250px, 1fr));
-		grid-template-rows: repeat(6, 400px);
+		grid-auto-rows: 400px;
 		gap: 10px;
 	}
 }
@@ -1009,14 +1009,40 @@ html {
 	margin: 20px 0 0 0;
 }
 .form__body {
-	position: relative;
 	margin: clamp(30px, 4.2vw, 60px) 0 0 0;
 }
-.form__body::after {
+.form__fields::before {
 	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
+	height: 100%;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.322);
+	z-index: 99999999;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity visibility .2ms;
+}
+.form__fields::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100vw;
+	z-index: 1000000000;
+	mix-blend-mode: multiply;
+	background: url('../video/loading-white.gif') center / 150px no-repeat;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity visibility .2s;
+}
+.form__fields._sending::before,
+.form__fields._sending::after {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity visibility .2s;
 }
 .form__data {
 }

@@ -1,7 +1,7 @@
 (function () {
     "use strict"
 
-    const form = document.getElementById('form');
+    const form = document.querySelector('.form__fields');
 
     form.addEventListener('submit', formSend);
 
@@ -12,7 +12,9 @@
         let formData = new FormData(this);
 
         if(error === 0) {
-            form.classList.add('_sending')
+            form.classList.add('_sending');
+            document.body.style.overflow = 'hidden';
+
             let response = await fetch('sendmail.php', {
                 method: 'POST',
                 body: formData
@@ -22,9 +24,13 @@
                 alert(result.message);
                 formPreview.innerHTML = '';
                 form.reset();
+                form.classList.remove('_sending');
+                document.body.style.overflow = 'visible';
             } 
             else {
                 alert('Ошибка')
+                form.classList.remove('_sending');
+                document.body.style.overflow = 'visible';
             }
         }
         else {
