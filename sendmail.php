@@ -1,21 +1,29 @@
 <?php
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
+    use PHPMailer\PHPMailer\SMTP;
 
     require 'phpmailer/src/Exception.php';
     require 'phpmailer/src/PHPMailer.php';
+    require 'phpmailer/src/SMTP.php';
 
     $mail = new PHPMailer(true);
 
     $mail->CharSet = 'UTF-8';
     $mail->setLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true);
+    $mail->Host = 'mail.hosting.reg.ru';                     //Set the SMTP server to send through
+    $mail->SMTPAuth = true;                                   //Enable SMTP authentication
+    $mail->Username = 'username@mail.ru';                     //SMTP username
+    $mail->Password = 'secret';                               //SMTP password
+    $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
+    $mail->Port = 465;                
 
     //От кого письмо
-    $mail->setFrom('TDNMZSITE@MAIL.RU', 'Сайт «НМЗ СПЕЦСТРОЙ»');
+    $mail->setFrom('username@mail.ru', 'Сайт «НМЗ СПЕЦСТРОЙ»');
 
     // Кому отправить
-    $mail->addAddress('OOO.TDNMZ@INBOX.RU');
+    $mail->addAddress('secret');
 
     // Тема письма
     $mail->Subject = 'Новая заявка с сайта ООО «НМЗ СПЕЦСТРОЙ»!"';
