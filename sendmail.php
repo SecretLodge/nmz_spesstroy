@@ -12,21 +12,21 @@
     $mail->CharSet = 'UTF-8';
     $mail->setLanguage('ru', 'phpmailer/language/');
     $mail->IsHTML(true);
-    $mail->Host = 'mail.hosting.reg.ru';                     //Set the SMTP server to send through
-    $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-    $mail->Username = 'username@mail.ru';                     //SMTP username
-    $mail->Password = 'secret';                               //SMTP password
-    $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
+    $mail->Host = 'mail.hosting.reg.ru';  
+    $mail->SMTPAuth = true;               
+    $mail->Username = 'pass';             
+    $mail->Password = 'pass';             
+    $mail->SMTPSecure = 'tls';            
     $mail->Port = 465;                
 
     //От кого письмо
-    $mail->setFrom('username@mail.ru', 'Сайт «НМЗ СПЕЦСТРОЙ»');
+    $mail->setFrom('pass', 'pass');
 
     // Кому отправить
-    $mail->addAddress('secret');
+    $mail->addAddress('pass');
 
     // Тема письма
-    $mail->Subject = 'Новая заявка с сайта ООО «НМЗ СПЕЦСТРОЙ»!"';
+    $mail->Subject = 'pass';
 
     // Тело письма
     $body = '<h1>Содержание заявки</h1>';
