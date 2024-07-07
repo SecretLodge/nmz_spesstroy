@@ -17,6 +17,58 @@ html {
 	margin: 0 auto;
 	padding: 0 10px;
 }
+.loader {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-color: #202227;
+	top: 0;
+	left: 0;
+	z-index: 1000000000000000000;
+	visibility: visible;
+	opacity: 1;
+	transition: all .3s;
+}
+.loader._hide {
+	visibility: hidden;
+	opacity: 0;
+}
+.loader__content {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.loader-logo {
+	display: block;
+	width: 288px;
+	height: 141px;
+}
+.loader-bar__content {
+	position: absolute;
+	display: flex;
+	left: 0;
+	bottom: 0;
+	height: 66px;
+	width: 100%;
+}
+.loader-bar__line {
+	width: 0%;
+	height: 100%;
+	background: linear-gradient(90deg, rgba(7, 184, 145, 0) 0%, #07B891 100%);
+	transition: width .3s;
+}
+.loader-bar__percent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	font-size: 48px;
+	align-self: center;
+	margin: 0 10px 0 0;
+}
 
 /* HEADER */
 
@@ -1023,7 +1075,7 @@ html {
 	z-index: 99999999;
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity visibility .2ms;
+	transition: all .2ms;
 }
 .form__fields::after {
 	content: '';
@@ -1037,13 +1089,13 @@ html {
 	background: url('../video/loading-white.gif') center / 150px no-repeat;
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity visibility .2s;
+	transition: all .2ms;
 }
 .form__fields._sending::before,
 .form__fields._sending::after {
 	opacity: 1;
 	visibility: visible;
-	transition: opacity visibility .2s;
+	transition: all .2ms;
 }
 .form__data {
 }
