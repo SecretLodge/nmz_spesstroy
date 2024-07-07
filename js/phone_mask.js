@@ -40,3 +40,10 @@ function maskPhone(selector, masked = '+7 (___) ___-__-__') {
 // use
 
 maskPhone('._number');
+
+
+const button = document.querySelector('.welcome__button');
+
+button.addEventListener('click', () => {
+	console.log('ale')
+})
