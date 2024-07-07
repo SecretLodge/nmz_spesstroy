@@ -10,6 +10,7 @@
     <script src="./js/hide_menu.js" defer></script>
     <script src="./js/form_hendling.js" defer></script>
     <script src="./js/header_scroll.js" defer></script>
+    <script src="./js/phone_mask.js" defer></script>
     <script src="./js/loader.js" defer></script>
 </head>
 <body class="body">
@@ -190,32 +191,32 @@
                             </div>
                             <div class="form__body">
                                 <div class="form__data">
-                                    <form action="#" class="form__fields">
+                                    <form action="" id="form" class="form__fields">
                                         <div class="form__inputs">
                                             <div class="form__list">
                                                 <div class="form__item">
-                                                    <input type="text" name="name" id="name" class="form__input" placeholder="Имя">
+                                                    <input type="text" name="name" id="name" class="form__input _req _name" placeholder="Имя">
                                                 </div>
                                                 <div class="form__item">
-                                                    <input type="email" name="email" id="email" class="form__input" placeholder="Почта">
+                                                    <input type="email" name="email" id="email" class="form__input _req _email" placeholder="Почта">
                                                 </div>
                                                 <div class="form__item">
-                                                    <input type="tel" name="number" id="number" class="form__input" placeholder="Номер">
+                                                    <input type="tel" name="number" id="number" class="form__input _req _number" placeholder="Номер">
                                                 </div>
                                                 <div class="form__item">
-                                                    <input type="text" name="company" id="company" class="form__input" placeholder="Компания">
+                                                    <input type="text" name="company" id="company" class="form__input _company" placeholder="Компания">
                                                 </div>
                                                 <div class="form__item">
-                                                    <textarea placeholder="Коментарий" type="text" name="message" id="message" class="form__input"></textarea>
+                                                    <textarea placeholder="Коментарий" type="text" name="message" id="message" class="form__input _req _message"></textarea>
                                                 </div>
                                             </div>
                                             <div class="form__checkbox checkbox">
-                                                <input class="checkbox__input" type="checkbox" name="agree" id="agree">
+                                                <input class="checkbox__input _req" type="checkbox" name="agree" id="agree">
                                                 <label class="checkbox__label" for="agree"><a href="./privacy.html" class="polit-privacy">Я согласен с условиями политики конфиденциальности</a></label>
                                             </div>
                                         </div>
                                         <div class="form__actions">
-                                            <button class="welcome__button">
+                                            <button type="submit" class="welcome__button">
                                                 <span class="welcome__button-name">Отправить</span>
                                                 <img src="./img/icons/double_arrow.svg" alt="double_arrow" class="welcome__button-img">
                                             </button>
