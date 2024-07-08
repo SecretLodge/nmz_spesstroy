@@ -1,5 +1,4 @@
 (function() {
-    const loadingPercent = document.querySelector('.loader-bar__percent');
     const loadingLine = document.querySelector('.loader-bar__line');
     const loaderCover = document.querySelector('.loader');
     
@@ -9,11 +8,9 @@
     let imagesLoadedCount = 0;
     
     function imageLoaded() {
-        const percent = `${Math.floor(((100 / imagesTotalCount) * imagesLoadedCount))}%`;
-
         imagesLoadedCount++;
-        loadingPercent.innerHTML = percent;
-        loadingLine.style.width = percent;
+
+        loadingLine.style.width = `${Math.floor(((100 / imagesTotalCount) * imagesLoadedCount))}%`;
 
         if(imagesLoadedCount >= imagesTotalCount) {
             setTimeout(() => {
@@ -22,7 +19,7 @@
                 }
 
                 loaderCover.classList.add('_hide');
-            }, 1000)
+            }, 3000)
         }
     }
 

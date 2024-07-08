@@ -27,11 +27,11 @@ html {
 	z-index: 1000000000000000000;
 	visibility: visible;
 	opacity: 1;
-	transition: all .3s;
 }
 .loader._hide {
 	visibility: hidden;
 	opacity: 0;
+	transition: all .3s;
 }
 .loader__content {
 	height: 100%;
